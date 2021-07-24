@@ -1,0 +1,220 @@
+body {
+    font-size: 15pt;
+}
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+:root{
+  --main-color:#B064EE;
+}
+
+html{
+  scroll-behavior: smooth;  
+}
+
+.nav-link
+{
+  margin: 0 .8rem !important;
+}
+
+.nav-link:hover
+{
+  color: var(--main-color) !important;
+}
+
+.navbar-brand
+{
+  color:var(--main-color) !important;
+}
+
+.colorBrand
+{
+  color: var(--main-color) !important;
+}
+
+.home
+{
+  color: var(--main-color) !important;
+}
+
+.navbar-brand
+{
+  position: sticky;
+}
+
+
+
+/* **** Hero Section Start **** */
+
+.hero
+{
+  width:100%;
+  height: 355px;
+}
+
+.hero::before
+{
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  right: 0;
+  width:100%;
+  height:600px;
+  z-index: -1;
+  background:url('l1.jpg');
+  background-size: 100% 100%;
+  opacity:0.3;
+}
+
+.btn-color
+{
+  background: var(--main-color);
+  color:white;
+}
+
+.setMargin
+{
+  margin-top: 11rem;
+}
+
+.colorProduct
+{
+  color:var(--main-color);
+}
+
+/* **** Service Section Start **** */
+.service
+{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.service-head
+{
+  color:var(--main-color);
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.gray
+{
+  color:gray;
+}
+
+.icon-color
+{
+  color: var(--main-color);
+  display:block;
+  margin: auto;
+}
+
+.para
+{
+ color:gray; 
+}
+
+.unique-card
+{
+  background: #FCF2FF;
+}
+
+.margin
+{
+  margin-top: 4rem;
+}
+
+
+.ourTeam
+{
+  background: #FCF2FF;
+  padding: 4rem 0;
+}
+
+.teamImg
+{
+  width:6rem;
+  height: 6.2rem;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  position: relative;
+  top:3rem;
+  z-index: 1;
+  border:1px solid var(--main-color);
+}
+
+.paraTeam{
+  color: gray;
+  font-size: 1rem;
+}
+
+.name
+{
+  color: var(--main-color);
+}
+
+.card-border
+{
+   /*border:1px solid var(--main-color);
+
+*/}
+
+@media(max-width:360px)
+{
+  .media
+  {
+    margin:0 1rem;
+  }
+
+}
+
+@media(max-width:980px)
+{
+  .media
+  {
+    margin:0 2rem;
+  }
+
+}
+
+/* ******----Contact Us ------******** */
+
+.margin-contact
+{
+  padding-right: 18rem;
+  padding-left: 18rem;
+}
+
+@media(max-width:360px)
+{
+ .margin-contact
+{
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+}
+
+.labal-color
+{
+  color: var(--main-color);
+}
+
+.btnColor{
+  background: var(--main-color);
+  color: white;
+}
+
+.footer
+{
+  background: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
