@@ -1,5 +1,8 @@
 body {
     font-size: 15pt;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 
@@ -16,8 +19,11 @@ body {
 
 html{
   scroll-behavior: smooth;  
+  
 }
 
+
+/* ******** Navbar Section ********* */
 .nav-link
 {
   margin: 0 .8rem !important;
@@ -92,7 +98,7 @@ html{
 /* **** Service Section Start **** */
 .service
 {
-  padding-top: 4rem;
+  padding-top: 17rem;
   padding-bottom: 4rem;
 }
 
@@ -166,13 +172,20 @@ html{
 
 */}
 
+  
+
 @media(max-width:360px)
 {
   .media
   {
-    margin:0 1rem;
+    margin:0 1rem !important;
   }
-
+ 
+   .productMedia
+    {
+    margin:0 .5rem !important;
+     }
+ 
 }
 
 @media(max-width:980px)
@@ -181,10 +194,15 @@ html{
   {
     margin:0 2rem;
   }
+ 
+   .productMedia
+    {
+     margin:0 2rem;
+    }
 
 }
 
-/* ******----Contact Us ------******** */
+/* ******----Contact Us ------******* */
 
 .margin-contact
 {
@@ -200,6 +218,16 @@ html{
   padding-left: 3rem;
 }
 }
+
+@media(max-width:720px)
+{
+ .margin-contact
+{
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+}
+
 
 .labal-color
 {
@@ -217,4 +245,143 @@ html{
   color: white;
   padding: 1rem;
   text-align: center;
+  margin-top: auto;
+}
+
+/* ******* All Products ******* */
+.mediaAgain
+{
+  margin: 2rem 2.5rem;
+}
+
+@media(max-width:360px)
+{
+  .mediaAgain
+  {
+    margin: 2rem 0rem;
+  }
+
+}
+
+
+/* ------ product Info -------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+p{
+  margin: 0;
+}
+
+.card{
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform .3s;
+  font-family: 'Nunito',
+  sans-serif;
+  font-weight: 500;
+}
+
+.card:hover{
+  transform: translateY(-10px);  
+  transition: transform .3s;  
+  
+}
+
+.sizeImg
+{
+  width:11rem;
+  height: 8rem;
+  display: block;
+  margin: auto;
+}
+
+.colorText
+{
+  color: gray;
+}
+
+.colorCost
+{
+  color:var(--main-color);
+}
+
+
+
+.last
+{
+  background: var(--main-color);
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+.icon
+{
+  color:yellow;
+  font-size: 1.5rem;
+  margin: 0 .3rem;
+}
+
+.card
+{
+  border:none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.modal-title
+{
+  color:var(--main-color) !important;  
+}
+
+.btn{
+ background: var(--main-color);
+ color: #fff;
+ border:none;
+ outline: none !important;
+}
+
+.btn:hover{
+ outline: none !important;   
+}
+
+.delete, .update
+{
+  width:50%;
+}
+
+.delete
+{
+  background: #F23B3B;
+  border-bottom-left-radius: 20px;
+  transition: opacity 0.3s;
+}
+
+.update
+{
+  background: var(--main-color);
+  border-bottom-right-radius: 20px;
+  transition: opacity 0.3s;
+}
+
+.update:hover{
+ opacity: 0.5; 
+}
+
+.delete:hover{
+ opacity: 0.5; 
+}
+
+
+
+.operationIcon
+{
+  color:white;
+  font-size: 1.5rem;
+  margin: 0 .3rem;
+  padding: .8rem 0;  
+}
+
+label{
+  color: var(--main-color);
 }

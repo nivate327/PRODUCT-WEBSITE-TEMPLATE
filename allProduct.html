@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProductInfo</title>
+    
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  
+    
+   
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NavBar Section -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light py-2">
+  <a class="navbar-brand ml-4" href="#"><i class="fas fa-laptop fa-1x colorBrand mr-2"></i>
+    Product</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-center">
+      <li class="nav-item active">
+        <a class="nav-link home" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Our Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="allProduct.html">
+          All Products
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mr-4" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mr-4" href="index.html">Contact Us</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+
+<div class="container-fluid d-flex justify-content-md-between justify-content-sm-between flex-column flex-md-row flex-sm-row my-5">
+      
+  <form class="form-inline" method="get">
+        <div class="form-group">
+          <input class="form-control ml-0 ml-md-0 mt-3 mt-md-0 mt-sm-0" type="search" name="" id="" value="" placeholder="Search.." />
+        </div>
+        <button class="btn btnColor ml-md-5 mr-md-4 mr-0 ml-3" type="submit">Search</button>
+   </form>
+  
+  
+    <div class="row">
+      <div class="col-6">
+        <button class="btn btnColor" data-target="#modal" data-toggle="modal">Add + </button>
+      </div>
+    </div>
+    
+  
+  <div class="btn-group ml-0 mt-3 mt-md-0 mt-sm-0">
+    <button type="button" class="btn btnColor">Select Category</button>
+    <button type="button" class="btn btnColor dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Apple Laptop</a>
+      <a class="dropdown-item" href="#">DELL Laptop</a>
+      <a class="dropdown-item" href="#">HP Laptop</a>
+      <a class="dropdown-item" href="#">ASUS Laptop</a>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+  <div class="container-fluid mt-5">
+      <div class="row productMedia">
+        
+        <!-- card 1 start -->
+        <div class="col-12 col-md-4  mb-5">
+          <div class="card">
+            <div class="img align-items-center mt-4">
+              <img class="img-fluid card-img sizeImg" src="asus.png" alt="" />
+            </div>
+            <h5 class="text-center mt-4">   ASUS</h5>
+            
+            <!-- info -->
+            <div class="card-body p-3">
+             <div class="info mb-3">
+              <p class="text-center colorText">lorem this is awesome </p>
+              <p class="text-center colorText">color is red</p>
+              </div>
+              
+              <div class="cost">
+                <p class="colorCost text-center">$1000</p>
+              </div>
+            </div>
+            <!-- info end -->
+          
+            <div class="star mt-2 mb-4 d-flex justify-content-center">
+              <i class="fas fa-star icon"></i>
+              <i class="fas fa-star icon"></i>
+               <i class="fas fa-star icon"></i>
+                <i class="fas fa-star icon"></i>
+                 <i class="fas fa-star icon"></i>
+            </div>
+          
+            <!-- last start -->  
+            <div class="last text-center d-flex align-items-center">
+               <div class="delete">
+                <i class="fas fa-trash operationIcon"></i> 
+               </div>
+                
+                <div class="update">
+                  <i class="fas fa-edit operationIcon"></i>
+                </div>
+                
+            </div>
+            <!-- last end -->
+          </div>
+        </div>
+        <!-- card 1 end -->
+      </div>
+    </div>
+    <!-- container end -->
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Product Name</label>
+            <input type="text" class="form-control" placeholder="Product Name">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleInputEmail1">Price</label>
+            <input type="number" class="form-control" placeholder="Product Price">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleInputEmail1">Description</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+          </div
+          
+          <div class="form-group">
+            <label for="exampleInputEmail1">Browse Image</label>
+            <input type="file" class="form-control">
+          </div
+     
+          <button type="button" class="btn" data-dismiss="modal"> Submit </button>
+          
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+  <footer class="footer">
+    websiteTemplete Second made by Rohan
+  </footer>
+<!-- Project -->
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
