@@ -79,7 +79,7 @@ html{
   opacity:0.3;
 }
 
-.btn-color
+.btnColor
 {
   background: var(--main-color);
   color:white;
@@ -334,11 +334,9 @@ p{
   color:var(--main-color) !important;  
 }
 
-.btn{
+.btnColor{
  background: var(--main-color);
  color: #fff;
- border:none;
- outline: none !important;
 }
 
 .btn:hover{
